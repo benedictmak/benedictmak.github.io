@@ -1,4 +1,4 @@
-When PowerShell fails, this might help you to find your WMI peer
+When PowerShell fails, this might help you to inject exe to your WMI peer
 
 ```
 using System;
