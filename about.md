@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Security noob. Simpsons lover. Dragonboat rower.
+Security noob. Simpsons fans
