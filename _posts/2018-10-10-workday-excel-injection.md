@@ -11,4 +11,5 @@ Though it has a built-in filter to sanitize basic functions like "=cmd|", but it
 
 Append your favourite commands, then your colleagues' computer is under your control :)
 
-Workday said it is fixed.
+
+Update 2018 Oct: Workday said it is fixed.
