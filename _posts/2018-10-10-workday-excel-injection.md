@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control your colleagues' computer through workday:)
+title: Workday vulnerability found. Excel command injection
 ---
 
 Workday is a great app for HR, but it is also great for spreading malicious code.<br>
